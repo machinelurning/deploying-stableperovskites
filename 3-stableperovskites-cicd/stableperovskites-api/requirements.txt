@@ -1,8 +1,12 @@
+--extra-index-url=${PIP_EXTRA_INDEX_URL}
+
 uvicorn
 fastapi
 python-multipart
 pydantic
 typing_extensions
 loguru
-stableperovskites==0.0.9
 httpx
+
+# fetched from Gemfury
+stableperovskites
