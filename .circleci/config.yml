@@ -5,6 +5,12 @@ defaults: &defaults
     - image: circleci/python:3.9.5
   working_directory: ~/project
 
+install_venv:
+  run:
+    name: Install venv
+    command: |
+      sudo apt install python3.9-venv
+
 prepare_venv: &prepare_venv
   run:
     name: Create venv
