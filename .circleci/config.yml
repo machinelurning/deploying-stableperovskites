@@ -197,7 +197,7 @@ jobs:
       - run:
           name: Publish model to Gemfury
           command: |
-            . venv/bin/ac fheroktivate
+            . venv/bin/activate
             chmod +x ./scripts/publish_model.sh
             ./scripts/publish_model.sh ./packages/regression_model/
 
